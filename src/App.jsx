@@ -10,7 +10,7 @@ function App() {
     axios.get(`https://excuser-three.vercel.app/v1/excuse/${userOption}`)
       .then(res => setData(res.data[0].excuse));
   }
-
+  
   console.log(data);
   return (
     <div className='app'>
