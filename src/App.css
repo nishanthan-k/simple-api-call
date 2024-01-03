@@ -1,0 +1,27 @@
+.app {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.excuse {
+  width: 300px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.excuse > h2 {
+  padding: 10px;
+}
