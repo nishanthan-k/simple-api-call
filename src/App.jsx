@@ -16,13 +16,13 @@ function App() {
     <div className='app'>
       <h1>Click any button</h1>
       <div className='buttons'>
-        <button onClick={ () => fetchData("party") }>Party</button>
-        <button onClick={ () => fetchData("family") }>Family</button>
-        <button onClick={ () => fetchData("office") }>Office</button>
+        <button className='btn' onClick={ () => fetchData("party") }>Party</button>
+        <button className='btn' onClick={ () => fetchData("family") }>Family</button>
+        <button className='btn' onClick={ () => fetchData("office") }>Office</button>
       </div>
       { data && (
         <div className='excuse'>
-          <h2>{ data }</h2>
+          <p className='excuse-result'>{ data }</p>
         </div>
       ) }
     </div>
