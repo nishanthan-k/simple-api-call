@@ -11,7 +11,7 @@ function App() {
       const res = await axios.get(`https://excuser-three.vercel.app/v1/excuse/${userOption}`)
       setData(res.data[0].excuse)
     } catch (err) {
-      console.log(err);
+      console.log(err.response);
     }
   }
 
