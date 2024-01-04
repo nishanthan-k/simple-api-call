@@ -11,7 +11,6 @@ function App() {
       .then(res => setData(res.data[0].excuse));
   }
   
-  console.log(data);
   return (
     <div className='app'>
       <h1>Click any button</h1>
