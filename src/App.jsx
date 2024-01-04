@@ -23,10 +23,12 @@ function App() {
         <button className='btn' onClick={ () => fetchData("family") }>Family</button>
         <button className='btn' onClick={ () => fetchData("office") }>Office</button>
       </div>
-      { data && (
+      { data ? (
         <div className='excuse'>
           <p className='excuse-result'>{ data }</p>
         </div>
+      ) : (
+        <p>Select anyone from the above options </p>
       ) }
     </div>
   )
