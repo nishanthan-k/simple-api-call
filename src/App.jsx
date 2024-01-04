@@ -6,11 +6,15 @@ function App() {
 
   const [data, setData] = useState("");
 
-  const fetchData = (userOption) => {
-    axios.get(`https://excuser-three.vercel.app/v1/excuse/${userOption}`)
-      .then(res => setData(res.data[0].excuse));
+  const fetchData = async (userOption) => {
+    try {
+      const res = await axios.get(`https://excuser-three.vercel.app/v1/excuse/${userOption}`)
+      setData(res.data[0].excuse)
+    } catch (err) {
+      console.log(err);
+    }
   }
-  
+
   return (
     <div className='app'>
       <h1>Click any button</h1>
